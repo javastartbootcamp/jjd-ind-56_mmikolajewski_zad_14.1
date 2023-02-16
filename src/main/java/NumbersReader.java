@@ -11,7 +11,7 @@ public class NumbersReader {
             int nextNumber = scanner.nextInt();
             if (numbersMap.containsKey(nextNumber)) {
                 Integer frequency = numbersMap.get(nextNumber);
-                numbersMap.put(nextNumber, ++frequency);
+                numbersMap.put(nextNumber, frequency + 1);
             } else {
                 numbersMap.put(nextNumber, 1);
             }
